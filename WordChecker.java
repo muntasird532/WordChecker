@@ -3,7 +3,6 @@ public class WordChecker {
     private ArrayList<String> wordList;
     public WordChecker(ArrayList<String> list)
     {
-        ArrayList<String> list= new Arraylist<String>
         wordList = list;
         wordList = new ArrayList<String>();
 
@@ -17,6 +16,10 @@ public class WordChecker {
                 return false;
             }
         }
+    }
+    public ArrayList<String> createList(String target)
+    {
+        ArrayList<String> list= new Arraylist<String>();
     }
 
 }
