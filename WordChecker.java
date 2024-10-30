@@ -16,10 +16,16 @@ public class WordChecker {
                 return false;
             }
         }
+        return wordChain;
     }
-    public ArrayList<String> createList(String target)
-    {
-        ArrayList<String> list= new Arraylist<String>();
-    }
-
+  public ArrayList<String> createList(String target) {
+        ArrayList<String> finalList = new ArrayList<String>();
+        for(int i=0; i<wordList.size(); i++) {
+            String current = wordList.get(i);
+            if (current.startsWith(target) == true) {
+                finalList.add(current);
+            }
+        }
+        return finalList;
+  }
 }
